@@ -33,11 +33,9 @@ if(!pckg) {
 #'  url:  
 #'  
 #' @usage:
-#   funcParams="list(fileProfiles='C:/SocialValue/data/twitter/queryManager/data/analytics.5.csv',fileRepository='C:/SocialValue/data/twitter/queryManager/data/tw.network.index.csv',id='screenName', nFollowersMax = 5, nProfilesMax = 1)"
-#   test <- getTwUserFollowers(funcParams)
+#'  urlToken  <- "http://sandbox.ereuse.org/api-token-auth/"
+#'  token     <- getToken(urlToken, username = "xxxx", password = "xxxx")
 #' @details
-#' 
-#funcParams="list(fileTweets = 'C:/SocialValue/data/twitter/queryManager/studies/123/bi/tw.tweets/bi.tw.tweets.csv', fileProfiles='C:/SocialValue/data/twitter/repository/profiles/profiles.csv',fileNetwork='C:/SocialValue/data/twitter/repository/network.index.csv',id='screenName', nFollowersMax = 5, nProfilesMax = 100, nMinutesWaitMax=40)"
 
 
 getToken <- function(url,username,password){
@@ -45,9 +43,3 @@ getToken <- function(url,username,password){
   data      <- rjson::fromJSON  (result, method = "C", unexpected.escape = "skip")
   return(data$token)  
 }
-
-# test
-
-urlToken  <- "http://sandbox.ereuse.org/api-token-auth/"
-token     <- getToken(urlToken, username = "ereuse", password = "ereuse@grd")
-
