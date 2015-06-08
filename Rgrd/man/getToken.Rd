@@ -2,25 +2,31 @@
 % Please edit documentation in R/getToken.R
 \name{getToken}
 \alias{getToken}
-\title{Get GRD Token}
+\title{Get Token}
 \usage{
-getToken(url, username, password)
+getToken(urlToken, username, password)
 }
 \arguments{
-\item{url}{an uri poiting to api-token, http://sandbox.ereuse.org/api-token-auth/}
+\item{url}{an uri pointing to a RESTful API to provide a token access, http://sandbox.ereuse.org/api-token-auth/}
 
-\item{username}{an string with the username of a user}
+\item{The}{username (string) provided by ereuse.org federated platforms.}
 
-\item{password}{an string}
+\item{The}{password (string) provided by ereuse.org federated platforms.}
 }
 \value{
-a string qith token id
+a string with a token id
 }
 \description{
-\code{getToken} uses getToken to get a token for GRD
+\code{getToken} This function is used to get authentication token to access to your grd session. This will enable many bits of functionality as well as allow other commands to provide more options
+}
+\details{
+If username or password is invalid HTTP Status Code = 400
 }
 \examples{
 urlToken  <- "http://sandbox.ereuse.org/api-token-auth/"
- token     <- getToken(urlToken, username = "xxxx", password = "xxxx")
+token     <- getToken(urlToken, username = "xxx", password = "xxx")
+}
+\seealso{
+http://sandbox.ereuse.org/swagger-ui/#!/default/post_api_token_auth
 }
 
