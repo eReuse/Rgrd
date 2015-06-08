@@ -3,11 +3,10 @@
 \alias{Rgrd}
 \docType{package}
 \title{
-Data analysis over a Global Record Device system for electronic traceability
+Tools and Utilities for Grd
 }
 \description{
-Some about
-Rgrd Pakace
+Data analysis and tools over a Global Record Device (GRD) system storing data about digital devices traceability.
 }
 \details{
 \tabular{ll}{
@@ -16,22 +15,18 @@ Type: \tab Package\cr
 Version: \tab 1.0\cr
 Date: \tab 2015-06-08\cr
 }
-urlToken  <- "http://sandbox.ereuse.org/api-token-auth/"
-token     <- getToken(urlToken, username = "XXX", password = "XXX")
 }
 \author{
-David Franquesa
+David Franquesa Griso
 
-Maintainer: David Franquesa <d.franquesa@ereuse.org>
+Maintainer: David Franquesa Griso <d.franquesa@ereuse.org>
 }
 \references{
 ~~ Literature or other references for background information ~~
 }
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R documentation directory ~~
 \keyword{ package }
 \seealso{
 }
 \examples{
-urlToken  <- "http://sandbox.ereuse.org/api-token-auth/"
-token     <- getToken(urlToken, username = "XXX", password = "XXX")
+~~ Some Examples ~~
 }

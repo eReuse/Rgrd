@@ -4,10 +4,10 @@
 \alias{getToken}
 \title{Get GRD Token}
 \usage{
-urlToken  <- "http://sandbox.ereuse.org/api-token-auth/"
+getToken(url, username, password)
 }
 \arguments{
-\item{url}{an uri, for example http://sandbox.ereuse.org/api-token-auth/}
+\item{url}{an uri poiting to api-token, http://sandbox.ereuse.org/api-token-auth/}
 
 \item{username}{an string with the username of a user}
 
@@ -18,5 +18,9 @@ a string qith token id
 }
 \description{
 \code{getToken} uses getToken to get a token for GRD
+}
+\examples{
+urlToken  <- "http://sandbox.ereuse.org/api-token-auth/"
+ token     <- getToken(urlToken, username = "xxxx", password = "xxxx")
 }
 
