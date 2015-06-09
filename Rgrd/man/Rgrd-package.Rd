@@ -18,15 +18,9 @@ Date: \tab 2015-06-08\cr
 }
 \author{
 David Franquesa Griso
-
 Maintainer: David Franquesa Griso <d.franquesa@ereuse.org>
 }
 \references{
-~~ Literature or other references for background information ~~
+# Literature or other references for background information
 }
 \keyword{ package }
-\seealso{
-}
-\examples{
-~~ Some Examples ~~
-}

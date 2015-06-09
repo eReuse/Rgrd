@@ -4,27 +4,25 @@
 \alias{getToken}
 \title{Get Token}
 \usage{
-getToken(urlToken, username, password)
+getToken(url = "xxx", username = "xxx", password = "xxx")
 }
 \arguments{
-\item{url}{an uri pointing to a RESTful API to provide a token access, http://sandbox.ereuse.org/api-token-auth/}
+\item{url}{an uri pointing to a RESTful API to provide a token access}
 
-\item{The}{username (string) provided by ereuse.org federated platforms.}
+\item{username}{(string) provided by ereuse.org federated platforms.}
 
-\item{The}{password (string) provided by ereuse.org federated platforms.}
+\item{password}{(string) provided by ereuse.org federated platforms.}
 }
 \value{
-a string with a token id
+a list (result, error, call())
+
+result contains token id#'
 }
 \description{
 \code{getToken} This function is used to get authentication token to access to your grd session. This will enable many bits of functionality as well as allow other commands to provide more options
 }
 \details{
 If username or password is invalid HTTP Status Code = 400
-}
-\examples{
-urlToken  <- "http://sandbox.ereuse.org/api-token-auth/"
-token     <- getToken(urlToken, username = "xxx", password = "xxx")
 }
 \seealso{
 http://sandbox.ereuse.org/swagger-ui/#!/default/post_api_token_auth
