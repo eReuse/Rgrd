@@ -1,11 +1,11 @@
 Package: Rgrd
 Type: Package
 Title: Tools and Utilities for Grd
-Version: 1.0
-Date: 2015-06-08
+Version: 1.01
+Date: 2015-06-09
 Author: David Franquesa Griso
 Maintainer: David Franquesa Griso <d.franquesa@ereuse.org>
-Depends: R (>= 1.8.0), RCurl (>= 1.95), rjson (>= 0.2.14)
+Depends: R (>= 1.8.0), RCurl (>= 1.95), jsonlite (>= 0.9.16)
 Description: Data analysis and tools over a Global record device System storing data about digital devices traceability
 License: file LICENSE
 URL: http://www.ereuse.org, https://github.com/eReuse/grd-utils
