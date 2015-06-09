@@ -15,12 +15,12 @@ getToken <- function(url,username,password){
   out <- tryCatch(
     { 
       if(!is.null(url)&!is.null(username)&!(is.null(password))){
-        result <- postForm(uri = url, username=username, password = password,.checkParams = TRUE, style = 'HTTPPOST')
-        data   <- rjson::fromJSON  (result, method = "C", unexpected.escape = "skip")
-        return(list(result = data$token, error=F, call = list(url = url, username = username)))        
+        raux    <- RCurl::postForm(uri = url, username=username, password = password,.checkParams = TRUE, style = 'HTTPPOST')
+        djson   <- rjson::fromJSON  (raux, method = "C", unexpected.escape = "skip")
+        return(list(result = djson$token, error=F, call = list(url = url, username = username)))        
       } else {
-          return(list(result = simpleError(message = "Some arguments are NULL"), error=T))        
-      }              
+        return(list(result = simpleError(message = "Some arguments are NULL"), error=T))        
+      }               
     },
     error = function(cond){
       return(list(result=cond, error=T))
