@@ -4,7 +4,7 @@
 \alias{getDevicesJson}
 \title{Get Devices}
 \usage{
-getDevices(url)
+devices <- getDevices(url)
 }
 \arguments{
 \item{url}{an uri pointing to a RESTful API to provide a list of devices}

@@ -1,7 +1,7 @@
 #' Get Devices
 #' 
 #' \code{getDevicesJson} This function returns all devices stored on GRD.
-#' @usage getDevices(url)
+#' @usage devices <- getDevices(url)
 #' @param url an uri pointing to a RESTful API to provide a list of devices
 #' @details Not finished
 #' @return A list of 3 values. result is a json, error is a logical, call is list of one value (url called)
