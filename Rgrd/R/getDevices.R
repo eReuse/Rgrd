@@ -10,7 +10,7 @@
 getDevicesJson <- function(url){
   out <- tryCatch(
     { 
-      
+      deviceExists <- url.exists(url)
       if(devicesExists) {
         rGet    = getURL(url)
         return(list(result = rGet, error=F, call = list(url = url)))        
