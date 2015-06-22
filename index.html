@@ -30,9 +30,24 @@
 <p>Get introduced to this package using our <a href="https://github.com/eReuse/Rgrd/blob/master/Rgrd-manual.pdf">Rgrd manual</a></p>
 
 <h3>
-<a id="currently-under-development" class="anchor" href="#currently-under-development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Currently under development</h3>
+<a id="how-to-install-last-version-of-this-package" class="anchor" href="#how-to-install-last-version-of-this-package" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to install last version of this package</h3>
 
-<p>This package is currently under development but you can test how to retrive GRD using GRD REST API implementation.</p>
+<p>Download it as a .zip or .tar.gz, decompress it, install on R a file with name Rgrd_1.01.tar.gz </p>
+
+<h3>
+<a id="how-to-install-a-test-version-of-this-package" class="anchor" href="#how-to-install-a-test-version-of-this-package" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to install a test version of this package</h3>
+
+<p>On R type:
+    install.packages("<a href="http://data.ereuse.org/packages/Rgrd_0.01.tar.gz">http://data.ereuse.org/packages/Rgrd_0.01.tar.gz</a>", repos = NULL, type="source")</p>
+
+<h3>
+<a id="how-start-with-this-package" class="anchor" href="#how-start-with-this-package" aria-hidden="true"><span class="octicon octicon-link"></span></a>How start with this package</h3>
+
+<p>On R type:
+    library(Rgrd)
+    url     &lt;- "<a href="http://sandbox.ereuse.org/api/devices/">http://sandbox.ereuse.org/api/devices/</a>"
+    data    &lt;- getDevices(url)
+    result  &lt;- data$result</p>
 
 <h3>
 <a id="authors-support-or-contact" class="anchor" href="#authors-support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors, support or Contact</h3>
