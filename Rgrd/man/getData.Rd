@@ -4,7 +4,7 @@
 \alias{getData}
 \title{GetData}
 \usage{
-getData(path.devices,token)
+getData(url = "http://sandbox.ereuse.org/api/devices/",token = "f012ee230b324f384f4def745ed0a8702adc9452")
 }
 \arguments{
 \item{url}{an uri pointing to a resource}
@@ -15,9 +15,9 @@ getData(path.devices,token)
 a list (result, error, url called)
 }
 \description{
-\code{getData} This function is used to return data from an API REST where url is pointing
+\code{getData} This function is used to return data pointing to an url resource
 }
 \details{
-If name do not match to any resource returns an error.
+These command will return any authorized data for a given uri resource.
 }
 
