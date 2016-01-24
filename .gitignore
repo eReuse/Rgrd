@@ -4,3 +4,4 @@
 .RData
 Rgrd.Rcheck
 grd-utils.Rproj
+.httr-oauth
