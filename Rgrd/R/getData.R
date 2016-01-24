@@ -1,10 +1,10 @@
 #' GetData
 #' 
-#' \code{getData} This function is used to return data from an API REST where url is pointing
-#' @usage getData(path.devices,token)  
+#' \code{getData} This function is used to return data pointing to an url resource
+#' @usage getData(url = "http://sandbox.ereuse.org/api/devices/",token = "f012ee230b324f384f4def745ed0a8702adc9452")  
 #' @param url an uri pointing to a resource
 #' @param token a string with a valid access for a given user and resource
-#' @details If name do not match to any resource returns an error. 
+#' @details These command will return any authorized data for a given uri resource. 
 #' @return a list (result, error, url called)
 
 
