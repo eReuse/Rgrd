@@ -5,7 +5,7 @@
     <title>Rgrd by eReuse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
@@ -20,12 +20,12 @@
 
     <section class="main-content">
       <h3>
-<a id="welcome-to-rgrd-package" class="anchor" href="#welcome-to-rgrd-package" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Rgrd package.</h3>
+<a id="welcome-to-rgrd-package" class="anchor" href="#welcome-to-rgrd-package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Rgrd package.</h3>
 
 <p>This packages helps you to interact with a ereuse.org Global Devide Repository (GRD).</p>
 
 <h3>
-<a id="what-this-package-does" class="anchor" href="#what-this-package-does" aria-hidden="true"><span class="octicon octicon-link"></span></a>What this package does.</h3>
+<a id="what-this-package-does" class="anchor" href="#what-this-package-does" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What this package does.</h3>
 
 <p>Below some examples you can run without any installation:<br></p>
 
@@ -34,39 +34,44 @@
 </ul>
 
 <h3>
-<a id="how-to-install-from-github" class="anchor" href="#how-to-install-from-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to install from Github</h3>
+<a id="how-to-install-from-github" class="anchor" href="#how-to-install-from-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to install from Github</h3>
 
 <p>Just fire up an R shell and type: <br>
 <br>
-<code>install.packages("https://github.com/eReuse/Rgrd/raw/master/Rgrd_1.01.tar.gz", repos = NULL, type="source")</code><br> </p>
+<code>install.packages("https://github.com/eReuse/Rgrd/raw/master/Rgrd_0.02.tar.gz", repos = NULL, type="source")</code><br> </p>
 
 <h3>
-<a id="how-to-install-from-source-file" class="anchor" href="#how-to-install-from-source-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to install from source file</h3>
+<a id="how-to-install-from-source-file" class="anchor" href="#how-to-install-from-source-file" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to install from source file</h3>
 
 <p>Download it as a .zip or .tar.gz, decompress it, install on R a file with name Rgrd_[version].tar.gz </p>
 
 <h3>
-<a id="how-start-with-this-package" class="anchor" href="#how-start-with-this-package" aria-hidden="true"><span class="octicon octicon-link"></span></a>How start with this package</h3>
+<a id="how-start-with-this-package" class="anchor" href="#how-start-with-this-package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How start with this package</h3>
 
 <p>On R shell type: (after installation on your R)<br>
 <br>
 <code>library(Rgrd)</code><br>
-<code>url     &lt;- "http://sandbox.ereuse.org/api/devices/"</code><br>
-<code>data    &lt;- getDevices(url)</code><br>
-<code>result  &lt;- data$result</code><br></p>
+<code>url.token     &lt;- "http://sandbox.ereuse.org/api-token-auth/"</code><br>
+<code>path.base     &lt;- "http://sandbox.ereuse.org"</code><br>
+<code>path.devices  &lt;- getPath(path.base, "devices")$result</code><br>
+<code>username = "demo"</code><br>
+<code>password = "demo"</code><br>
+<code>token   &lt;- getToken(url.token,username,password)$result</code><br>
+<code>devices &lt;- getData(path.devices,token)$result</code><br>
+``<br></p>
 
 <h3>
-<a id="rgrd-manual" class="anchor" href="#rgrd-manual" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rgrd Manual</h3>
+<a id="rgrd-manual" class="anchor" href="#rgrd-manual" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Rgrd Manual</h3>
 
 <p>Get introduced to this package using our <a href="https://github.com/eReuse/Rgrd/blob/master/Rgrd-manual.pdf">Rgrd manual</a></p>
 
 <h3>
-<a id="authors-support-or-contact" class="anchor" href="#authors-support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors, support or Contact</h3>
+<a id="authors-support-or-contact" class="anchor" href="#authors-support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors, support or Contact</h3>
 
 <p><a href="https://github.com/dfranquesa" class="user-mention">@dfranquesa</a></p>
 
 <h3>
-<a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributors</h3>
+<a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributors</h3>
 
 <p><a href="https://github.com/slamora" class="user-mention">@slamora</a></p>
 
@@ -91,4 +96,3 @@
 
   </body>
 </html>
-
